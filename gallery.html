@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lavina’s Gallery — Fashion Graphics & Digital Art</title>
+  <meta name="description" content="Fashion graphics, streetwear concepts, and digital collage by Lavina Dangi.">
+  
+  <meta property="og:title" content="Lavina’s Gallery — Fashion Graphics & Digital Art">
+  <meta property="og:description" content="Fashion graphics, streetwear concepts, and digital collage by Lavina Dangi.">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/star-4point.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <style>
+    .gallery-hero {
+      padding-top: 160px;
+      padding-bottom: 60px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 32px;
+      margin-bottom: 80px;
+    }
+
+    .artwork-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .artwork-card:hover {
+      border-color: var(--border-card-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-4px);
+    }
+
+    .artwork-media {
+      height: 320px;
+      background: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      position: relative;
+    }
+
+    .artwork-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+    }
+
+    .artwork-placeholder-box {
+      width: 100%;
+      height: 100%;
+      border: 1px dashed rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-sub);
+      text-align: center;
+      padding: 16px;
+    }
+
+    .artwork-placeholder-icon {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      color: #71717A;
+    }
+
+    .artwork-info {
+      padding: 22px;
+    }
+
+    .artwork-tag {
+      font-size: 0.76rem;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .artwork-name {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin: 4px 0 2px 0;
+    }
+
+    .artwork-sub {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Interactive Starfield Canvas -->
+  <canvas id="star-canvas"></canvas>
+
+  <!-- Header -->
+  <header class="site-header scrolled">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-logo">
+        <span>Lavina</span><span class="brand-star">*</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="pixellab-media.html">Pixellab Media</a></li>
+          <li><a href="index.html#contact">Let’s talk</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.instagram.com/lavinadangii/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          Follow @lavinadangii ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="container">
+        
+        <div class="reveal-fade" style="max-width: 820px; margin-bottom: 56px;">
+          <span class="section-label">Visual archive / 2026</span>
+          <h1 class="hero-title">
+            Lavina’s Gallery
+          </h1>
+          <p class="section-subtitle" style="font-size: 1.3rem;">
+            Fashion graphics, streetwear studies, and digital collage — music and mood translated into things you can wear.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          
+          <!-- 01 / Artwork: Juicewrld Tribute -->
+          <div class="artwork-card reveal-fade delay-1">
+            <div class="artwork-media">
+              <div class="artwork-placeholder-box">
+                <div class="artwork-placeholder-icon">✦</div>
+                <div style="font-size: 0.86rem; color: #A1A1AA; font-weight: 500;">Exhibition Slot 01</div>
+                <div style="font-size: 0.74rem; color: #52525B; margin-top: 4px;">Ready for image drop</div>
+              </div>
+            </div>
+            <div class="artwork-info">
+              <div class="artwork-tag">01 / ARTWORK</div>
+              <h3 class="artwork-name">Juicewrld Tribute</h3>
+              <div class="artwork-sub">Collage tee concept</div>
+            </div>
+          </div>
+
+          <!-- 02 / Artwork: Eyes That Speak -->
+          <div class="artwork-card reveal-fade delay-2">
+            <div class="artwork-media">
+              <div class="artwork-placeholder-box">
+                <div class="artwork-placeholder-icon">✦</div>
+                <div style="font-size: 0.86rem; color: #A1A1AA; font-weight: 500;">Exhibition Slot 02</div>
+                <div style="font-size: 0.74rem; color: #52525B; margin-top: 4px;">Ready for image drop</div>
+              </div>
+            </div>
+            <div class="artwork-info">
+              <div class="artwork-tag">02 / ARTWORK</div>
+              <h3 class="artwork-name">Eyes That Speak</h3>
+              <div class="artwork-sub">Streetwear identity</div>
+            </div>
+          </div>
+
+          <!-- 03 / Artwork: Breathe -->
+          <div class="artwork-card reveal-fade delay-3">
+            <div class="artwork-media">
+              <div class="artwork-placeholder-box">
+                <div class="artwork-placeholder-icon">✦</div>
+                <div style="font-size: 0.86rem; color: #A1A1AA; font-weight: 500;">Exhibition Slot 03</div>
+                <div style="font-size: 0.74rem; color: #52525B; margin-top: 4px;">Ready for image drop</div>
+              </div>
+            </div>
+            <div class="artwork-info">
+              <div class="artwork-tag">03 / ARTWORK</div>
+              <h3 class="artwork-name">Breathe</h3>
+              <div class="artwork-sub">Graphic tee concept</div>
+            </div>
+          </div>
+
+          <!-- 04 / Artwork: So Blue -->
+          <div class="artwork-card reveal-fade delay-1">
+            <div class="artwork-media">
+              <div class="artwork-placeholder-box">
+                <div class="artwork-placeholder-icon">✦</div>
+                <div style="font-size: 0.86rem; color: #A1A1AA; font-weight: 500;">Exhibition Slot 04</div>
+                <div style="font-size: 0.74rem; color: #52525B; margin-top: 4px;">Ready for image drop</div>
+              </div>
+            </div>
+            <div class="artwork-info">
+              <div class="artwork-tag">04 / ARTWORK</div>
+              <h3 class="artwork-name">So Blue</h3>
+              <div class="artwork-sub">Music-led apparel</div>
+            </div>
+          </div>
+
+          <!-- 05 / Artwork: Overdose -->
+          <div class="artwork-card reveal-fade delay-2">
+            <div class="artwork-media">
+              <div class="artwork-placeholder-box">
+                <div class="artwork-placeholder-icon">✦</div>
+                <div style="font-size: 0.86rem; color: #A1A1AA; font-weight: 500;">Exhibition Slot 05</div>
+                <div style="font-size: 0.74rem; color: #52525B; margin-top: 4px;">Ready for image drop</div>
+              </div>
+            </div>
+            <div class="artwork-info">
+              <div class="artwork-tag">05 / ARTWORK</div>
+              <h3 class="artwork-name">Overdose</h3>
+              <div class="artwork-sub">Artist collage</div>
+            </div>
+          </div>
+
+          <!-- 06 / Artwork: MEEVYY Draped Edit -->
+          <div class="artwork-card reveal-fade delay-3">
+            <div class="artwork-media">
+              <div class="artwork-placeholder-box">
+                <div class="artwork-placeholder-icon">✦</div>
+                <div style="font-size: 0.86rem; color: #A1A1AA; font-weight: 500;">Exhibition Slot 06</div>
+                <div style="font-size: 0.74rem; color: #52525B; margin-top: 4px;">Ready for image drop</div>
+              </div>
+            </div>
+            <div class="artwork-info">
+              <div class="artwork-tag">06 / ARTWORK</div>
+              <h3 class="artwork-name">MEEVYY Draped Edit</h3>
+              <div class="artwork-sub">Product campaign · Pixellab Media</div>
+            </div>
+          </div>
+
+          <!-- 07 / Artwork: MEEVYY Bangle Story (Features user's uploaded bangle photo) -->
+          <div class="artwork-card reveal-fade delay-1">
+            <div class="artwork-media">
+              <img src="assets/images/meevyy-bangles.jpg" alt="MEEVYY Bangle Story Artwork">
+            </div>
+            <div class="artwork-info">
+              <div class="artwork-tag">07 / ARTWORK</div>
+              <h3 class="artwork-name">MEEVYY Bangle Story</h3>
+              <div class="artwork-sub">Product campaign · Pixellab Media</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner -->
+        <div class="gallery-banner-card reveal-fade" style="text-align: center; justify-content: center; flex-direction: column;">
+          <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: #FFFFFF; margin-bottom: 12px;">
+            More experiments are always in motion.
+          </h2>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">
+            Follow my creative journey and new streetwear drops on Instagram.
+          </p>
+          <a href="https://www.instagram.com/lavinadangii/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Follow the process on Instagram ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo" style="font-size: 1.25rem;">
+          <span>Lavina</span><span class="brand-star">*</span>
+        </a>
+        <div class="footer-copy">
+          © 2026 Lavina Dangi. Visual Archive.
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Portfolio</a>
+        <a href="index.html#work" class="footer-link">Work</a>
+        <a href="pixellab-media.html" class="footer-link">Pixellab</a>
+        <a href="https://www.instagram.com/lavinadangii/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/stars.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
